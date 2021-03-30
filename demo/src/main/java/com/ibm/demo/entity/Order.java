@@ -3,6 +3,16 @@ import javax.validation.constraints.NotNull;
 
 public class Order {
 	@NotNull
+	private float tax;
+	public float getTax() {
+		return tax;
+	}
+
+	public void setTax(float tax) {
+		this.tax = tax;
+	}
+
+	@NotNull
 	private String item;
 	private int price;
 	private String id;
